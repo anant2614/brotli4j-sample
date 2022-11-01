@@ -44,10 +44,7 @@ public class HelloBrotliHttpController {
   @RequestMapping(value = "/decompress", method = GET)
   @ResponseBody
   String decompressBrotli() throws IOException {
-//    return run("http://localhost:8080/hello");
-    return run("http://localhost:9080/api/v0/config/global/e3fddb91c8d6702d3f974e9b77c0946b0f69a3eec9a0102b3a7738c6bd23fe06?sdkV=82000&clientV=new&gpid=97eb723f-7343-4cd1-a41d-056f88377abf&devNet=WIFI&screenInfo=1080%3A2400%3A440&locale=en-IN®ion=IN&region=IN&appLocale=hi&cache=true");
-//    return run("http://localhost:9080/api/v0/glance/updateOnlineUnseenEvents");
-//    return run("http://10.205.79.161:8080/api/v1/glance/data/4918f5461c26959adad09d9d9ca06fb356dd51db27515020894b5f83fc89aee1?region=IN&width=400&height=600&lastUpdatedAt=0&sdkV=82200");
+    return run("http://localhost:8080/hello");
   }
 
   public String run(String url) throws IOException {
